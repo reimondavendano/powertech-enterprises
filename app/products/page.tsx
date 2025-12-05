@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Filter, ChevronDown, Search, Grid, List, ArrowRight, X } from 'lucide-react';
 import { mockProducts } from '@/lib/mock-data';
 
-export default function ProductsPage() {
+function ProductsContent() {
     const searchParams = useSearchParams();
     const initialCategory = searchParams.get('category'); // e.g., 'components' or 'laptops'
 
@@ -291,5 +291,13 @@ export default function ProductsPage() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function ProductsPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading Products...</div>}>
+            <ProductsContent />
+        </Suspense>
     );
 }
