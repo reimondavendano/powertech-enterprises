@@ -25,7 +25,7 @@ export default function ServicesPage() {
         <div className="bg-gray-50 min-h-screen font-sans text-gray-900 pb-20">
 
             {/* Hero Section */}
-            <section className="relative text-white py-24 overflow-hidden">
+            <section className="relative text-white pt-36 pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/assets/hero.jpg"
@@ -54,8 +54,8 @@ export default function ServicesPage() {
                                 key={cat}
                                 onClick={() => setActiveCategory(cat)}
                                 className={`px-6 py-2.5 rounded-lg text-sm font-bold font-display uppercase tracking-wider border-2 transition-all duration-300 ${activeCategory === cat
-                                        ? 'bg-red-600 border-red-600 text-white shadow-[0_0_15px_rgba(220,38,38,0.5)] transform scale-105'
-                                        : 'bg-white border-gray-200 text-gray-500 hover:border-red-400 hover:text-red-500 hover:bg-red-50'
+                                    ? 'bg-red-600 border-red-600 text-white shadow-[0_0_15px_rgba(220,38,38,0.5)] transform scale-105'
+                                    : 'bg-white border-gray-200 text-gray-500 hover:border-red-400 hover:text-red-500 hover:bg-red-50'
                                     }`}
                             >
                                 {cat}

@@ -20,7 +20,8 @@ export default function InquiryPage() {
         <div className="bg-gray-50 min-h-screen font-sans text-gray-900 pb-20">
 
             {/* Header */}
-            <section className="relative text-white py-24 overflow-hidden">
+            {/* Header */}
+            <section className="relative text-white pt-36 pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/assets/hero.jpg"
@@ -69,7 +70,7 @@ export default function InquiryPage() {
                                 <div className="flex items-center gap-4">
                                     <Mail className="text-gray-400 flex-shrink-0" />
                                     <div>
-                                        <p className="text-gray-300">sales@powertech.ph</p>
+                                        <p className="text-gray-300">tobyzalas19@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">

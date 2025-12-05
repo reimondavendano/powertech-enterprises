@@ -107,7 +107,7 @@ export default function BuildPCPage() {
         <div className="bg-gray-50 min-h-screen font-sans text-gray-900 pb-32">
 
             {/* Header */}
-            <div className="relative text-white py-24 overflow-hidden">
+            <div className="relative text-white pt-36 pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/assets/hero.jpg"
